@@ -63,7 +63,14 @@ I will use external sort merge sort. I will place the urls into ten sorted hash 
 
 
 8. In your view, what are the pros and cons of automating a test at UI level?
+    ```
+    ##pros
+    - UI automation testing tools support testing on multiple platforms, browsers and all latest devices. This important            because different clients will be using different devices while visiting our site.
+    ```
 
 9. What are the software testing tools that you use in your own projects, and why?
+```
+In most of my testing i use unit tests. To be honest I have not worke in my front end projects so for the back-end projects I have done I have always used unit testings. I know unit tests aren't efficient for large projects.
+```
 
 
