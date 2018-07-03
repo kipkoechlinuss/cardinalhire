@@ -3,11 +3,21 @@
 With the language of your choice, given two integer arrays (A and B), how would you sort and merge B into A as one sorted array?
 ```
 I would sort the two arrays separately and then merge them. 
+
+ /* Function to merge array in sorted order*/
+    public static void sortMerge(int A[], int B[])
+    {
+        /* Concatenate two arrays*/
+           int[] A = ArrayUtils.addAll(A, B);
+       /* sorting the resulting  A array*/
+        Arrays.sort(A);
+    }
 ```
 
 Note: You may assume that A has enough space to hold additional elements from B, and the number of elements initialized in A and B are M and N, respectively.
 
 2. If, instead, the two arrays A and B are string arrays, with the language of your choice, how would you sort and merge B into A as one sorted array? Does your approach change?
+ ```No I would use the same approach```
 
 Note: Same assumptions as above.
 
@@ -45,6 +55,9 @@ Note: Same assumptions as above.
 ## Test/QA Questions
 
 4. What steps would you take to automate testing?
+```
+1) 
+```
 
 5. What are the criteria under which you shouldn’t automate a test?
 
@@ -75,9 +88,9 @@ I will use external sort merge sort. I will place the urls into ten sorted hash 
     ```
    1) Proficiency is required to write the automation test scripts.
 
-   2) Debugging the test scripts can be really painful and time consuming. I
+   2) Debugging the test scripts can be really painful and time consuming.
 
-   3)Test maintenance is costly in case of playback methods. Even though a minor change occurs in the GUI, the test script has to be re-recorded or replaced by a new test script. 
+   3) Test maintenance is costly in case of playback methods. Even though a minor change occurs in the GUI, the test script         has to be re-recorded or replaced by a new test script. 
 
     ```
 9. What are the software testing tools that you use in your own projects, and why?
