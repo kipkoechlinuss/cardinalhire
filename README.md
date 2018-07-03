@@ -2,7 +2,7 @@
 
 With the language of your choice, given two integer arrays (A and B), how would you sort and merge B into A as one sorted array?
 ```
--	I 
+I would sort the two arrays separately and then merge them. 
 ```
 
 Note: You may assume that A has enough space to hold additional elements from B, and the number of elements initialized in A and B are M and N, respectively.
@@ -12,6 +12,33 @@ Note: You may assume that A has enough space to hold additional elements from B,
 Note: Same assumptions as above.
 
 3. You are given a linked list and a value: k. Find the kth element from the last.
+```
+public static LinkedList getKthLastElement(LinkedList head, int k) {
+    if (head == null || k < 1) {
+        return null;
+    }
+
+    LinkedList current = head;
+    LinkedList prev = head;
+
+
+    for (int i = 0; i < k - 1; i++) {
+        current = current.next;
+        if (current == null) {
+            return null;
+        }
+    }
+
+    while (current.next != null) {
+        prev = prev.next;
+        current = current.next;
+    }
+
+    return prev;
+}
+
+```
+
 
 Note: Same assumptions as above.
 
