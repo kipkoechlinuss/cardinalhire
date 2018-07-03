@@ -56,10 +56,24 @@ Note: Same assumptions as above.
 
 4. What steps would you take to automate testing?
 ```
-1) 
+1) I will make sure i understand what i want to test.
+2) find the right tools to automate the tests
+3) Analyze various applications to determine those which are best suited for automation.
+4) get training for the tool i have selected to use in automating the tests.
+5) Develope an execution plan for the tests
+6) Write the scripts for automation
+7) Write reports on the testing
 ```
 
 5. What are the criteria under which you shouldn’t automate a test?
+```
+- For application functions that must be validated
+  subjectively by humans such as usability or look-and-feel, manual testing
+  may be the only option
+-  For new application functions that are still being developed and evolving / changing frequently, creating automated
+scripts may be a waste of time
+
+```
 
 6. You are given a large amount of log files, how would you find the top ten visited links?
 ```
@@ -78,21 +92,22 @@ I will use external sort merge sort. I will place the urls into ten sorted hash 
 8. In your view, what are the pros and cons of automating a test at UI level?
     
     ##pros
+    
     ```
     - UI automation testing tools support testing on multiple platforms, browsers and all latest devices. This important            because different clients will be using different devices while visiting our site.
     - Logs/reports can be generated hence can be used to expand the testing.
-    - 
-   
-    ``
-    ## cons
+    - Tests can be reused.
+    -
     ```
-   1) Proficiency is required to write the automation test scripts.
+    ## cons
+  
+  ```
+  1) Proficiency is required to write the automation test scripts.
 
    2) Debugging the test scripts can be really painful and time consuming.
 
    3) Test maintenance is costly in case of playback methods. Even though a minor change occurs in the GUI, the test script         has to be re-recorded or replaced by a new test script. 
-
-    ```
+ ```
 9. What are the software testing tools that you use in your own projects, and why?
 ```
 In most of my testing i use unit tests. To be honest I have not worke in my front end projects so for the back-end projects I have done I have always used unit testings. I know unit tests aren't efficient for large projects.
