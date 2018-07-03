@@ -49,8 +49,18 @@ Note: Same assumptions as above.
 5. What are the criteria under which you shouldn’t automate a test?
 
 6. You are given a large amount of log files, how would you find the top ten visited links?
+```
+I will use external sort merge sort. I will place the urls into ten sorted hash buckets and then pick the top of each bucket. This approach assumes that the urls are fairly distributed into the hash buckets. 
+```
 
 7. If you are asked to test google search bar, how would you test it?
+    ```
+    - I will check what happens when i submit a form with no inputs.
+    - I will check what happens when i submit a really large form.
+    - I will check what happens when if i include special characters in the form.
+    - I will also see how long it taks for a querry to be processed and the accuracy of the results.
+    ```
+
 
 8. In your view, what are the pros and cons of automating a test at UI level?
 
