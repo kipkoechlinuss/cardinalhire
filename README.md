@@ -5,14 +5,15 @@ With the language of your choice, given two integer arrays (A and B), how would 
 I would sort the two arrays separately and then merge them. 
 
  /* Function to merge array in sorted order*/
-    public static void sortMerge(int A[], int B[])
+    ```
+   public static void sortMerge(int A[], int B[])
     {
         /* Concatenate two arrays*/
            int[] A = ArrayUtils.addAll(A, B);
        /* sorting the resulting  A array*/
         Arrays.sort(A);
     }
-```
+   ```
 
 Note: You may assume that A has enough space to hold additional elements from B, and the number of elements initialized in A and B are M and N, respectively.
 
@@ -22,7 +23,8 @@ Note: You may assume that A has enough space to hold additional elements from B,
 Note: Same assumptions as above.
 
 3. You are given a linked list and a value: k. Find the kth element from the last.
-```
+
+``` Java
 public static LinkedList getKthLastElement(LinkedList head, int k) {
     if (head == null || k < 1) {
         return null;
